@@ -14,7 +14,3 @@ Notre produit propose a nos usager de decouvrir des commercants pret des lieux q
 ### Librairie de Machine Learning
 
 ### Architecture
-
-
-
-

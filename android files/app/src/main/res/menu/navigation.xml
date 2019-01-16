@@ -2,18 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_historique"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/toolbar_historique" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_photo"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/toolbar_photo" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_profil"
+        android:enabled="true"
+        android:checkable="true"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_profil" />
 
 </menu>

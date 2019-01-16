@@ -9,4 +9,6 @@ target 'ELIM project' do
   pod 'AFNetworking', '~> 3.0'
   pod 'ReachabilitySwift'
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'SPPermission'
+  pod 'YPImagePicker'
 end

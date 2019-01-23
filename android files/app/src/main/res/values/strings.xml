@@ -7,6 +7,6 @@
     <string name="toolbar_photo">Prise de photo</string>
 
     <string name="title_profil">Mon profil</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">Maps Activity</string>
     <string name="title_button_scan">Prendre une photo du produit</string>
 </resources>

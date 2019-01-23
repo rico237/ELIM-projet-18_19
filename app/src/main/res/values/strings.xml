@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ELIM</string>
+    <string name="title_prise_photo">Prendre un produit en photo</string>
+    <string name="title_historique">Mon historique de produits</string>
+
+    <string name="toolbar_historique">Mon historique</string>
+    <string name="toolbar_photo">Prise de photo</string>
+
+    <string name="title_profil">Mon profil</string>
+    <string name="title_activity_maps">Maps Activity</string>
+    <string name="title_button_scan">Prendre une photo du produit</string>
+</resources>

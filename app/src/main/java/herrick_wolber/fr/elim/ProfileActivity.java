@@ -2,6 +2,7 @@ package herrick_wolber.fr.elim;
 
 import android.os.Bundle;
 
+
 import herrick_wolber.fr.elim.Helpers.BaseActivity;
 
 public class ProfileActivity extends BaseActivity {

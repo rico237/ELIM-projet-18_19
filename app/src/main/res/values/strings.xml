@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ELIM</string>
+    <string name="app_name">Advisor</string>
     <string name="title_prise_photo">Prendre un produit en photo</string>
     <string name="title_historique">Mon historique de produits</string>
 

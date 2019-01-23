@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".PrisePhotoActivity">
 
-
-
-
     <com.camerakit.CameraKitView
         android:id="@+id/camera"
         android:layout_width="match_parent"
@@ -22,9 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-
-    </com.camerakit.CameraKitView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_capture"
@@ -39,4 +34,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

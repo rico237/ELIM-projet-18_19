@@ -9,7 +9,7 @@ public class App extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("myAppId")
+                .applicationId("b72U3u9m3sFGSK4pi")
                 .server("https://elim20182019.herokuapp.com/parse/")
                 .build()
         );

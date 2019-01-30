@@ -1,6 +1,7 @@
 package herrick_wolber.fr.elim;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -20,7 +21,9 @@ import android.widget.Toast;
 import com.camerakit.CameraKitView;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
@@ -36,6 +39,8 @@ public class PrisePhotoActivity extends AppCompatActivity implements GoogleApiCl
 
     private static final int MY_GPS_REQUEST_CODE = 100;
     private boolean isInStore = false;
+
+    private FusedLocationProviderClient fusedLocationProviderClient;
 
     private Location lastLocation;
     private LocationManager manager;
@@ -70,32 +75,10 @@ public class PrisePhotoActivity extends AppCompatActivity implements GoogleApiCl
         setContentView(R.layout.activity_prise_photo);
         cameraKitView = findViewById(R.id.camera);
 
-        manager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(PrisePhotoActivity.this);
-            builder.setTitle("Demande de position").setMessage("Nous avons besoins de votre position pour savoir où votre photo à été prise afin d'aider les autres utilisateurs");
-            builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    ActivityCompat.requestPermissions(PrisePhotoActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, MY_GPS_REQUEST_CODE);
-                    dialogInterface.dismiss();
-                }
-            });
-            builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    dialogInterface.dismiss();
-                }
-            });
-            AlertDialog dialog = builder.create();
-            dialog.show();
-        }
-        manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 1, listener);
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
         takePhotoButton = findViewById(R.id.button_capture);
         takePhotoButton.setOnClickListener(mCaptureListener);
-
-        lastLocation = manager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
         googleApiClient = new GoogleApiClient.Builder(this, this, this).addApi(LocationServices.API).build();
     }
@@ -158,6 +141,7 @@ public class PrisePhotoActivity extends AppCompatActivity implements GoogleApiCl
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     isInStore = true;
+                    askForPermission();
                     capturePhoto();
                     dialogInterface.dismiss();
                 }
@@ -176,7 +160,42 @@ public class PrisePhotoActivity extends AppCompatActivity implements GoogleApiCl
         }
     };
 
+    private void askForPermission(){
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(PrisePhotoActivity.this);
+            builder.setTitle("Demande de position").setMessage("Nous avons besoins de votre position pour savoir où votre photo à été prise afin d'aider les autres utilisateurs");
+            builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    ActivityCompat.requestPermissions(PrisePhotoActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, MY_GPS_REQUEST_CODE);
+                    updateLocation();
+                    dialogInterface.dismiss();
+                }
+            });
+            builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.dismiss();
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        } else {
+            updateLocation();
+        }
+    }
 
+    @SuppressLint("MissingPermission")
+    private void updateLocation(){
+        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(PrisePhotoActivity.this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null) {
+                    lastLocation = location;
+                }
+            }
+        });
+    }
 
     @Override
     public void onConnected(Bundle bundle) {

@@ -19,6 +19,9 @@ public class ProfileActivity extends BaseActivity {
 
     @Override
     public int getNavigationMenuItemId() {
-        return R.id.navigation;
+        return R.id.navigation_profile;
     }
+
+    @Override
+    public int getClickedIndex(){ return 2; }
 }

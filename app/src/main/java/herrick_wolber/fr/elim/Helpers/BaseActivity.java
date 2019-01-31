@@ -21,28 +21,27 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
 
     @Override
     public boolean onNavigationItemSelected(@NonNull final MenuItem item) {
-        if (item.getItemId() != getNavigationMenuItemId()) {
+
             Intent intentToShow;
             switch (item.getItemId()) {
                 case R.id.navigation_historique:
                     intentToShow = new Intent(this, HistoriqueActivity.class);
-                    startActivity(intentToShow);
                     toolbar.setTitle(R.string.title_historique);
+                    startActivity(intentToShow);
                     break;
                 case R.id.navigation_photo:
                     intentToShow = new Intent(this, ScannerActivity.class);
-                    startActivity(intentToShow);
                     toolbar.setTitle(R.string.title_prise_photo);
+                    startActivity(intentToShow);
                     break;
                 case R.id.navigation_profil:
                     intentToShow = new Intent(this, ProfileActivity.class);
-                    startActivity(intentToShow);
                     toolbar.setTitle(R.string.title_profil);
+                    startActivity(intentToShow);
                     break;
             }
-            finish();
-        }
-        return true;
+
+        return false;
     }
 
     @Override
@@ -68,6 +67,8 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
     public abstract int getContentViewId();
 
     public abstract int getNavigationMenuItemId();
+
+    public abstract int getClickedIndex();
 
     @Override
     protected void onStart() {

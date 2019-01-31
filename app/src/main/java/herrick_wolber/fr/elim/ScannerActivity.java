@@ -33,6 +33,9 @@ public class ScannerActivity extends BaseActivity {
 
     @Override
     public int getNavigationMenuItemId() {
-        return R.id.navigation;
+        return R.id.navigation_scanner;
     }
+
+    @Override
+    public int getClickedIndex(){ return 1; }
 }

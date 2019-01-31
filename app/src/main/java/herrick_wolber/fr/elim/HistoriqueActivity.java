@@ -80,7 +80,10 @@ public class HistoriqueActivity extends BaseActivity {
 
     @Override
     public int getNavigationMenuItemId() {
-        return R.id.navigation;
+        return R.id.navigation_histo;
     }
+
+    @Override
+    public int getClickedIndex(){ return 0; }
 
 }

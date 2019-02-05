@@ -1,5 +1,6 @@
 package herrick.fr.advisor.Base;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import herrick.fr.advisor.Activities.LabellingActivity;
 import herrick.fr.advisor.Fragments.HistoriqueFragment;
 import herrick.fr.advisor.R;
 
@@ -27,6 +29,8 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
                 return true;
             case R.id.navigation_dashboard:
                 toolbar.setTitle(R.string.toolbar_photo);
+                Intent activity = new Intent(this, LabellingActivity.class);
+                startActivity(activity);
                 return true;
             case R.id.navigation_notifications:
                 toolbar.setTitle(R.string.toolbar_profil);

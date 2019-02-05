@@ -12,7 +12,6 @@
     <string name="title_activity_maps">Maps Activity</string>
     <string name="title_button_scan">Prendre une photo du produit</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_searching">Envoi de l\'image en cours</string>
 
 </resources>

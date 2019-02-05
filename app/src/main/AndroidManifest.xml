@@ -19,9 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.LabellingActivity"></activity>
         <activity android:name=".Base.BaseActivity" />
         <activity android:name=".Activities.PrisePhotoActivity" />
-
         <activity
             android:name="com.parse.ui.login.ParseLoginActivity"
             android:label="@string/app_name"

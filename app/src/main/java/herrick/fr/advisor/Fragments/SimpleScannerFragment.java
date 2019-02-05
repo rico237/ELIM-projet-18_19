@@ -32,5 +32,4 @@ public class SimpleScannerFragment extends Fragment {
 
         return inflate;
     }
-
 }

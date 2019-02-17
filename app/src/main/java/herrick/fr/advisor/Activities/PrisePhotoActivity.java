@@ -123,18 +123,7 @@ public class PrisePhotoActivity extends AppCompatActivity implements GoogleApiCl
                     }
                 });
 
-                    /*photo.saveInBackground(new SaveCallback() {
-                        @Override
-                        public void done(ParseException e) {
-                            // Handle success or error
 
-                        }
-                    }, new ProgressCallback() {
-                        @Override
-                        public void done(Integer percentDone) {
-                            // Update your progress spinner here. percentDone will be between 0 and 100.
-                        }
-                    });*/
             }
         });
     }

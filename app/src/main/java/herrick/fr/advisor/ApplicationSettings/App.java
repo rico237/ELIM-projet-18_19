@@ -12,5 +12,6 @@ public class App extends MultiDexApplication {
                 .server("https://elim20182019.herokuapp.com/parse/")
                 .build()
         );
+
     }
 }

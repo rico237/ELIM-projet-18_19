@@ -12,6 +12,7 @@ import android.view.MenuItem;
 
 import herrick.fr.advisor.Activities.LabellingActivity;
 import herrick.fr.advisor.Fragments.HistoriqueFragment;
+import herrick.fr.advisor.Fragments.MapsFragment;
 import herrick.fr.advisor.Fragments.SimpleScannerFragment;
 import herrick.fr.advisor.R;
 
@@ -34,8 +35,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
                 return true;
             case R.id.navigation_notifications:
                 toolbar.setTitle(R.string.toolbar_profil);
-                Intent activity = new Intent(this, LabellingActivity.class);
-                startActivity(activity);
+                startFragment(new MapsFragment());
                 return true;
         }
         return false;

@@ -1,0 +1,4 @@
+#Wed Feb 13 06:25:15 CET 2019
+base.0=D\:\\PolytechNice\\elim\\ProjetElim\\ELIM-projet-18_19\\android files\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -8,9 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.google.api.client.json.Json;
 import com.parse.FindCallback;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
+import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
@@ -25,7 +27,8 @@ import herrick.fr.advisor.R;
 
 public class MapsFragment extends Fragment {
     private ArrayList<ParseObject> myDataset = new ArrayList<>();
-
+    private ArrayList<ParseObject> getAllArticlesWithLabel= new ArrayList<>();
+    String description="";
     public MapsFragment() {
 
     }
@@ -54,7 +57,7 @@ public class MapsFragment extends Fragment {
                              //   String label = myDataset.get(0).getString("createdAt");
                               JSONArray label = objects.get(0).getJSONArray("labelResults");
 
-                                String description="";
+
                                 try {
                               description=label.getJSONObject(0).getString("description");
                                 } catch (JSONException e1) {
@@ -64,7 +67,7 @@ public class MapsFragment extends Fragment {
 
                                         Toast.LENGTH_LONG).show();
                                 Log.d("maps", "Retrieved " + objects.size() + " objects");
-                                myDataset.addAll(objects);
+                             //   myDataset.addAll(objects);
 
                              //   mAdapter.notifyDataSetChanged();
                             } else {
@@ -77,55 +80,84 @@ public class MapsFragment extends Fragment {
                     final ParseQuery<ParseObject> query1 = ParseQuery.getQuery("UserProducts").addDescendingOrder("updatedAt");
 
 
-                    query1.setLimit(15);
+
+
 
                     query1.findInBackground(new FindCallback<ParseObject>() {
 
                         public void done(List<ParseObject> objects, ParseException ex) {
                             if (ex == null) {
 
-                                //   String label = myDataset.get(0).getString("createdAt");
-                                JSONArray label = objects.get(0).getJSONArray("labelResults");
 
-                                String description="";
-                                try {
-                                    description=label.getJSONObject(0).getString("description");
-                                } catch (JSONException e1) {
-                                    e1.printStackTrace();
-                                }
-                                Toast.makeText(getActivity(),"maps"+description,
+                                int a = objects.size();
+                               for (int i=0; i<a; i++)
+                               {
+                                   String er=""; String za="";
+                                   ParseGeoPoint e= null;
 
-                                        Toast.LENGTH_LONG).show();
-                                Log.d("maps", "Retrieved " + objects.size() + " objects");
-                                myDataset.addAll(objects);
+                                   try
+                                   {
+                                     za= Double.toString(objects.get(i).getParseGeoPoint("positionAssocie").getLatitude());
+                                       er=za;
+                                       if(er!="")
+                                       {
+                                           Toast.makeText(getActivity(), "i"+i+"er" + er,
 
-                                //   mAdapter.notifyDataSetChanged();
+                                                   Toast.LENGTH_LONG).show();
+                                           myDataset.add(objects.get(i)) ;
+                                       }
+
+
+
+
+                                   }
+
+                                   catch(Exception ez)
+                                   {
+                                     ez.printStackTrace();
+                                   }
+                                           //er=Double.toString(e.getLatitude()) ;
+
+
+
+                               }
+
+for(int z=0; z<myDataset.size();z++)
+
+{
+    JSONArray label = myDataset.get(z).getJSONArray("labelResults");
+
+    try {
+      String  descri = label.getJSONObject(0).getString("description");
+
+        if(descri.equals(description))
+        {
+            Toast.makeText(getActivity(), "meme description",Toast.LENGTH_LONG).show();
+         getAllArticlesWithLabel.add(myDataset.get(z));
+        }
+    }
+    catch (JSONException e1) {
+        e1.printStackTrace();
+    }
+
+    Toast.makeText(getActivity(), "liste" + description,
+     Toast.LENGTH_LONG).show();
+}
                             } else {
                                 Log.d("maps", "Error: " + ex.getMessage());
                             }
                         }
                     });
 
-
-
-
-
-
-
-
-
-                } else {
+                    query1.setLimit(15);
+               } else {
                     Log.d("ParseException", "Error: " + e.getMessage() + "Code : " + e.getCode());
                 }
             }
         });
 
 
-
-
-
-
-        return inflate;
+ return inflate;
     }
 
 }

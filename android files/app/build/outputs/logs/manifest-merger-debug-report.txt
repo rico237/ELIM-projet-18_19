@@ -1,0 +1,136 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\3083adff0388eb83ea3a7abd89e510b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5213945edeee5f097be4e80488f24a36\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d82c1c7373dd67e309e84f1818ee8f6b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fc27e23d5817445af4407ba9162dccc6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\333875ac01f442ab3c258fce14357bf3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f57491e6ad81003da344b84cd6adff22\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\54e1c2901ed1f622ec793e5d3df5d661\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\20060e3944eb5f4742c9fb5b7892a41a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\0caefc32e967d14ba942c77253551f97\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c57c89e764cadca57489247dc90328c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\4d46c3cfe4376252ff6f7d7efce46acd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e40207f20b7b1c3f6ffe4da0e75ce84d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\1b2a4a9c726062b94a3b43bb0a4bce19\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5b87d3451757f9560163ae275086bb1a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c0c0d342bfb4825a79d50ad59cf09a33\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a9a410a86e7bf1ceb0b4eba3c3ebb206\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\dba85c88cab90ee13623ba7ba4c17e53\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#ANDROID.PERMISSION.READ_EXTERNAL_STORAGE
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.INTERNET
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:10:22-64
+application
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:11:5-27:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d82c1c7373dd67e309e84f1818ee8f6b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d82c1c7373dd67e309e84f1818ee8f6b\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:15:9-54
+	android:icon
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:17:9-40
+activity#herrick_wolber.fr.elim.AnalyseActivity
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:18:9-26:20
+	android:label
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:19:13-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml:24:27-74
+uses-sdk
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\3083adff0388eb83ea3a7abd89e510b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\3083adff0388eb83ea3a7abd89e510b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5213945edeee5f097be4e80488f24a36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5213945edeee5f097be4e80488f24a36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d82c1c7373dd67e309e84f1818ee8f6b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d82c1c7373dd67e309e84f1818ee8f6b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fc27e23d5817445af4407ba9162dccc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\fc27e23d5817445af4407ba9162dccc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\333875ac01f442ab3c258fce14357bf3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\333875ac01f442ab3c258fce14357bf3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f57491e6ad81003da344b84cd6adff22\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f57491e6ad81003da344b84cd6adff22\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\54e1c2901ed1f622ec793e5d3df5d661\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\54e1c2901ed1f622ec793e5d3df5d661\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\20060e3944eb5f4742c9fb5b7892a41a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\20060e3944eb5f4742c9fb5b7892a41a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\0caefc32e967d14ba942c77253551f97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\0caefc32e967d14ba942c77253551f97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c57c89e764cadca57489247dc90328c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c57c89e764cadca57489247dc90328c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\4d46c3cfe4376252ff6f7d7efce46acd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\4d46c3cfe4376252ff6f7d7efce46acd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e40207f20b7b1c3f6ffe4da0e75ce84d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e40207f20b7b1c3f6ffe4da0e75ce84d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\1b2a4a9c726062b94a3b43bb0a4bce19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\1b2a4a9c726062b94a3b43bb0a4bce19\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5b87d3451757f9560163ae275086bb1a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5b87d3451757f9560163ae275086bb1a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c0c0d342bfb4825a79d50ad59cf09a33\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c0c0d342bfb4825a79d50ad59cf09a33\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a9a410a86e7bf1ceb0b4eba3c3ebb206\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a9a410a86e7bf1ceb0b4eba3c3ebb206\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\dba85c88cab90ee13623ba7ba4c17e53\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Inessa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\dba85c88cab90ee13623ba7ba4c17e53\AndroidManifest.xml:20:5-44
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		ADDED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml
+		INJECTED from D:\PolytechNice\elim\ProjetElim\ELIM-projet-18_19\android files\app\src\main\AndroidManifest.xml

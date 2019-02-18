@@ -152,8 +152,10 @@ for(int z=0; z<myDataset.size();z++)
     }
 
 
-    
-}try {
+
+}
+
+/*try {
                                     myDatasetForAdapter.addAll(getAllArticlesWithLabel);
                                     mAdapter.notifyDataSetChanged();
                                 }
@@ -168,7 +170,7 @@ for(int z=0; z<myDataset.size();z++)
                                 mAdapter = new ArticleAdapter(myDatasetForAdapter);
                                 mRecyclerView1.setAdapter(mAdapter);
 
-
+*/
 
                             } else {
                                 Log.d("maps", "Error: " + ex.getMessage());

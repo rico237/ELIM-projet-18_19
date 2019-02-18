@@ -53,8 +53,6 @@ public class HistoriqueFragment extends Fragment {
                 if (e == null) {
                     ParseQuery<ParseObject> query = ParseQuery.getQuery("UserProducts");
                     query.whereEqualTo("user", user);
-                    query.setLimit(30);
-
                     query.findInBackground(new FindCallback<ParseObject>() {
                         public void done(List<ParseObject> objects, ParseException ex) {
                             if (ex == null) {

@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import herrick.fr.advisor.Activities.LabellingActivity;
+import herrick.fr.advisor.Fragments.HWMapsFragment;
 import herrick.fr.advisor.Fragments.HistoriqueFragment;
 import herrick.fr.advisor.Fragments.MapsFragment;
 import herrick.fr.advisor.Fragments.SimpleScannerFragment;
@@ -35,7 +36,8 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
                 return true;
             case R.id.navigation_notifications:
                 toolbar.setTitle(R.string.toolbar_profil);
-                startFragment(new MapsFragment());
+                //startFragment(new MapsFragment());
+                startFragment(new HWMapsFragment());
                 return true;
         }
         return false;

@@ -1,11 +1,17 @@
 package herrick.fr.advisor.Fragments;
 
+import android.app.ListFragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.api.client.json.Json;
@@ -23,15 +29,24 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
+import herrick.fr.advisor.Adapter.ArticleAdapter;
+import herrick.fr.advisor.Adapter.HistoriqueAdapter;
 import herrick.fr.advisor.R;
 
-public class MapsFragment extends Fragment {
+public class MapsFragment extends Fragment
+{
     private ArrayList<ParseObject> myDataset = new ArrayList<>();
-    private ArrayList<ParseObject> getAllArticlesWithLabel= new ArrayList<>();
-    String description="";
-    public MapsFragment() {
+    private ArrayList<ParseObject> myDatasetForAdapter = new ArrayList<>();
+private RecyclerView.Adapter mAdapter;
+ public static ArrayList<ParseObject> getAllArticlesWithLabel= new ArrayList<>();
+
+   public static String description="";
+    public MapsFragment()
+    {
 
     }
+
+
 
 
     @Override
@@ -63,9 +78,7 @@ public class MapsFragment extends Fragment {
                                 } catch (JSONException e1) {
                                     e1.printStackTrace();
                                 }
-                                Toast.makeText(getActivity(),"maps"+description,
-
-                                        Toast.LENGTH_LONG).show();
+                              //  Toast.makeText(getActivity(),"maps"+description,Toast.LENGTH_LONG).show();
                                 Log.d("maps", "Retrieved " + objects.size() + " objects");
                              //   myDataset.addAll(objects);
 
@@ -101,9 +114,7 @@ public class MapsFragment extends Fragment {
                                        er=za;
                                        if(er!="")
                                        {
-                                           Toast.makeText(getActivity(), "i"+i+"er" + er,
-
-                                                   Toast.LENGTH_LONG).show();
+                                           //Toast.makeText(getActivity(), "i"+i+"er" + er,Toast.LENGTH_LONG).show();
                                            myDataset.add(objects.get(i)) ;
                                        }
 
@@ -132,17 +143,33 @@ for(int z=0; z<myDataset.size();z++)
 
         if(descri.equals(description))
         {
-            Toast.makeText(getActivity(), "meme description",Toast.LENGTH_LONG).show();
+            //Toast.makeText(getActivity(), "meme description",Toast.LENGTH_LONG).show();
          getAllArticlesWithLabel.add(myDataset.get(z));
         }
-    }
-    catch (JSONException e1) {
+
+    }catch (JSONException e1) {
         e1.printStackTrace();
     }
 
-    Toast.makeText(getActivity(), "liste" + description,
-     Toast.LENGTH_LONG).show();
-}
+
+    
+}try {
+                                    myDatasetForAdapter.addAll(getAllArticlesWithLabel);
+                                    mAdapter.notifyDataSetChanged();
+                                }
+                                catch (Exception ea)
+                                {
+                                    ea.printStackTrace();
+                                }
+                                RecyclerView mRecyclerView1 = getView().findViewById(R.id.products_recycler);
+                                mRecyclerView1.setHasFixedSize(true);
+                                RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+                                mRecyclerView1.setLayoutManager(mLayoutManager);
+                                mAdapter = new ArticleAdapter(myDatasetForAdapter);
+                                mRecyclerView1.setAdapter(mAdapter);
+
+
+
                             } else {
                                 Log.d("maps", "Error: " + ex.getMessage());
                             }

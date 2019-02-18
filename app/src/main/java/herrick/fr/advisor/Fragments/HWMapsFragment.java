@@ -55,6 +55,25 @@ public class HWMapsFragment extends Fragment {
 
                 mMap.clear(); //clear old markers
 
+
+
+
+
+
+
+
+
+
+
+
+
+                /*----------------- FAIT TES MODIFICATIONS ICI -------------------*/
+
+
+
+
+
+
                 CameraPosition googlePlex = CameraPosition.builder()
                         .target(new LatLng(37.4219999,-122.0862462))
                         .zoom(10)
@@ -77,6 +96,19 @@ public class HWMapsFragment extends Fragment {
                 mMap.addMarker(new MarkerOptions()
                         .position(new LatLng(37.3092293,-122.1136845))
                         .title("Captain America"));
+
+
+
+
+
+
+
+
+
+
+
+                /*--------------------------------------------------------------------------*/
+
             }
         });
 

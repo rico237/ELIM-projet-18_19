@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="herrick_wolber.fr.elim">
+    package="herrick.fr.advisor">
 
     <uses-sdk tools:overrideLibrary="com.camerakit, com.jpegkit" />
 
@@ -17,14 +17,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.LabellingActivity"></activity>
+        <activity android:name=".Base.BaseActivity" />
+        <activity android:name=".Activities.PrisePhotoActivity" />
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".PrisePhotoActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".ScannerActivity" />
+            android:name="com.parse.ui.login.ParseLoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true" />
+        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -34,7 +39,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".HistoriqueActivity"
+            android:name=".Activities.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -44,5 +49,7 @@
             </intent-filter>
         </activity>
     </application>
-
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
 </manifest>

@@ -50,31 +50,7 @@ public class PrisePhotoActivity extends AppCompatActivity implements GoogleApiCl
     private FusedLocationProviderClient fusedLocationProviderClient;
 
     private Location lastLocation;
-    private LocationManager manager;
     private GoogleApiClient googleApiClient;
-
-    private final LocationListener listener = new LocationListener() {
-        @Override
-        public void onLocationChanged(Location location) {
-            Log.d("Position", location.toString());
-            lastLocation = location;
-        }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String s) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String s) {
-
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
